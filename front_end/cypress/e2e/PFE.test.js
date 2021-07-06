@@ -1,0 +1,26 @@
+/** @format */
+
+describe('PFE demo', () => {
+	it.only('Login', () => {
+		cy.visit('/')
+		cy.wait(2000)
+		cy.get('#email').type('elyes@gmail.com')
+		cy.wait(2000)
+		cy.get('#password').type('elyes@gmail.com')
+		cy.wait(2000)
+		cy.get('.btn').click()
+		cy.wait(2000)
+		cy.get('#email').type('elyes@gmail.com')
+		cy.wait(2000)
+		cy.get('#password').type('123456')
+		cy.wait(2000)
+		cy.get('.btn').click()
+		cy.wait(2000)
+		cy.get('#pfe').type("Conception et realisation d'une plateforme")
+		cy.wait(2000)
+		cy.get('.btn').click()
+		cy.wait(2000)
+		cy.get('#Message').type('V2.0')
+		cy.get('.btn').click()
+	})
+})
